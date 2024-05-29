@@ -228,6 +228,7 @@ php artisan make:migration --table="produtos" alter_produtos_table
     Em nosso exemplo a relação de cardinalidades entre as tabelas produto e categoria é de 1:N, ou seja, o produto pode ter uma categoria, e a categoria pode ter vários produtos.
 
 
+ # Eloquente: Relacionamentos
    no model produto: 
 
    class Contato extends Model
@@ -241,8 +242,8 @@ php artisan make:migration --table="produtos" alter_produtos_table
 
 $categoria = $produto->categoria;
 
-use App\Models\Flight;
+use App\Models\Produtos;
  
-foreach (Flight::all() as $flight) {
-    echo $flight->name;
+foreach (Produtos::all() as $prod) {
+    echo $prod->name;
 }
