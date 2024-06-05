@@ -130,6 +130,7 @@ php artisan make:seeder nomeTableSeeder
    Facades são recursos que o Laravel fornece e que nos ajudam a ganhar tempo quando queremos realizar alguma operação na aplicação, nesse caso usaremos uma facade que nos permita inserir registros no Banco de Dados
    <?php
         use Illuminate\Support\Facades\DB;
+        use App\Models\Categoria:
 
         public function run()
      {
@@ -185,6 +186,7 @@ public function up()
     php artisan make:seed CategoriaSeed
      No CategoriaSeed:
 
+use App\Models\Categoria;
 public function run()
     {
   Categoria::insert(['nome' => 'categ1', 'descricao' => 'teste']);
