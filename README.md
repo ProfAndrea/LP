@@ -115,20 +115,20 @@ php artisan make:migration add_paid_to_users_table --table=users
 
 # SEEDS popular tabelas de BD
   
-Criando uma Seed
+# Criando uma Seed
 
 php artisan make:seeder nomeTableSeeder
-   php artisan: Execução do helper artisan com o PHP
+   php artisan: Execução do helper artisan com o PHP</br>
    make:seeder: Use o artisan para criar uma seeder
-   nomeTableSeeder: Nome da seeder (<tabela>TableSeeder)
+   nomeTableSeeder: Nome da seeder (<tabela>TableSeeder)</br>
 
-   A seeds criadas vão para o diretório database/seeds/
+   A seeds criadas vão para o diretório database/seeds/</br>
 
-   Dentro do arquivo, você encontrará uma classe com o nome da seeder criada, essa classe extende a classe Seeder, dentro da classe criada terá um método chamado run, esse é o método que será executado quando rodarmos a seed.
+   Dentro do arquivo, você encontrará uma classe com o nome da seeder criada, essa classe extende a classe Seeder, dentro da classe criada terá um método chamado run, esse é o método que será executado quando rodarmos a seed.</br>
 
    Para inserir os dados na tabela, nós usaremos uma Facade:
-   Facades são recursos que o Laravel fornece e que nos ajudam a ganhar tempo quando queremos realizar alguma operação na aplicação, nesse caso usaremos uma facade que nos permita inserir registros no Banco de Dados
-   <?php
+   Facades são recursos que o Laravel fornece e que nos ajudam a ganhar tempo quando queremos realizar alguma operação na aplicação, nesse caso usaremos uma facade que nos permita inserir registros no Banco de Dados</br>
+ </br>  <?php
         use Illuminate\Support\Facades\DB;
         use App\Models\Categoria:
 
@@ -138,7 +138,7 @@ php artisan make:seeder nomeTableSeeder
                                                        ])
 
      }
-
+</br>
 
            php artisan db:seed
 
