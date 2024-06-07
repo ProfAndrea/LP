@@ -222,7 +222,7 @@ php artisan make:migration --table="produtos" alter_produtos_table
         $table->dropColumn('categoria_id');
         });
     }
-
+php artisan make:migration --table="produtos" add_nome_produtos_table
     php artisan migrate
 
     # Adicionando relação entre o model Produto e Categoria
@@ -233,7 +233,7 @@ php artisan make:migration --table="produtos" alter_produtos_table
  # Eloquente: Relacionamentos
    no model produto: 
 
-   class Contato extends Model
+   class Produto extends Model
 {
  public function categoria(){
   return $this->belongsTo(Categoria::class);

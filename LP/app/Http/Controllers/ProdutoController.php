@@ -12,7 +12,7 @@ class ProdutoController extends Controller
      */
     public function index()
     {
-        //
+        return view ('layouts.produtos');
     }
 
     /**
@@ -36,7 +36,7 @@ class ProdutoController extends Controller
      */
     public function show(Produto $produto)
     {
-        //
+        $mostra=$produto->'categoria';
     }
 
     /**
